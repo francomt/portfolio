@@ -16,9 +16,12 @@ app.use(express.json());
 //api routes (match all requests to /api)
 app.use('/api', require('./apiRoutes/index'));
 
-//send index.html for any requests that dont match apis (our SPA)
-app.get('*', (req, res) => {
-  res.sendFile(path.join(`${__dirname}/../public/index.html`));
+// static file-serving middleware
+app.use(express.static(path.join(__dirname, '..', 'public')));
+
+//send index.html for any requests that dont match APIs (sends our SPA)
+app.use('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'public/index.html'));
 });
 
 //handle 500 errors
