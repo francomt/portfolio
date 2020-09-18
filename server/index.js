@@ -5,7 +5,7 @@ const path = require('path');
 const app = express();
 
 //morgan logging middleware
-app.use(morgan('dev'));
+if (process.env.NODE_ENV === 'development') app.use(morgan('dev'));
 
 //serve static files middleware
 app.use(express.static(path.join(`${__dirname}/public`)));
@@ -31,8 +31,4 @@ app.use((err, req, res, next) => {
   res.status(err.status || 500).send(err.message || 'Internal Server Error!');
 });
 
-//start the server
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`🤖 Listening on port ${port}`);
-});
+module.exports = app;

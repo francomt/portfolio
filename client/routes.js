@@ -6,7 +6,7 @@ import { fetchUser } from './store/user';
 
 const Routes = ({ userLoggedIn, loadData }) => {
   useEffect(() => {
-    // loadData();
+    loadData();
   }, []);
 
   return (
