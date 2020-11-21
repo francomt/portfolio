@@ -1,0 +1,100 @@
+.caption {
+  font-family: Poppins, sans-serif;
+  font-weight: 200;
+  color: #fff;
+  margin: 0;
+
+  &-main {
+    font-size: 2.5rem;
+    animation: moveDown 1.5s;
+
+    @include respond(main) {
+      animation: none;
+      transform: translateY(-60%);
+    }
+  }
+
+  &-sub {
+    font-size: 2rem;
+    animation: fadeIn 2.7s;
+    color: #fff;
+
+    @include respond(secondary) {
+      margin-right: 9.5rem;
+      width: fit-content;
+    }
+  }
+}
+
+.heading {
+  font-family: Poppins, sans-serif;
+  margin: 0;
+  color: #fd3a69;
+  font-size: 3rem;
+
+  &-main {
+    font-size: 10rem;
+    transform: translate(-1%, -12%);
+    animation: moveUp 1.5s;
+
+    @include respond(main) {
+      line-height: 10rem;
+      word-spacing: 20rem;
+    }
+
+    @include respond(mobile) {
+      font-size: 6rem;
+    }
+
+    &::before {
+      position: absolute;
+      content: "Franco Trelles.";
+      transform: translate(0.8%, 0.8%);
+      color: #fff;
+    }
+  }
+
+  &-sub {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #05dfd7;
+  }
+
+  &-title {
+    font-size: 5rem;
+    margin-bottom: 6rem;
+    color: #05dfd7;
+  }
+
+  &-white {
+    color: #fff;
+  }
+}
+
+.text {
+  font-family: Poppins, sans-serif;
+  font-weight: 200;
+  font-size: 1.7rem;
+  color: rgb(255, 245, 245);
+  line-height: 1.8;
+
+  &-bold {
+    font-weight: 600;
+  }
+}
+
+.tech-container {
+  display: flex;
+}
+
+.tech-items {
+  display: flex;
+  flex-direction: column;
+  &:not(:last-child) {
+    margin-right: 10rem;
+  }
+}
+
+.bold {
+  font-weight: 700;
+}

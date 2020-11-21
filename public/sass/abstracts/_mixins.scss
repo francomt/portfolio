@@ -1,0 +1,41 @@
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*
+
+ARGS
+-phone
+-tab-port
+-tab-land
+-big-desktop
+
+
+1em = 16px
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == main {
+    @media (max-width: 67.4375em) {
+      //1079px / 16px
+      @content;
+    }
+  }
+
+  @if $breakpoint == secondary {
+    @media (max-width: 48.4375em) {
+      //775px / 16px
+      @content;
+    }
+  }
+
+  @if $breakpoint == mobile {
+    @media (max-width: 31.25em) {
+      //500px / 16px
+      @content;
+    }
+  }
+}

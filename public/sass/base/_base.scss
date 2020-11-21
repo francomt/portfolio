@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  // Defines 1rem
+
+  font-size: 62.5%; //1rem = 10px >>>> 10/16 = 62.5%
+  background-color: rgba(10, 25, 47, 1);
+  overflow-x: hidden;
+
+  @include respond(main) {
+    scroll-snap-type: none;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 25px;
+  height: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #fd3a69, #b60d34);
+  border-radius: 30px;
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #201c29, #201c29 1px, #100e17 0, #100e17);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+  transition: all 0.2s;
+
+  &:hover {
+    color: #fd3a69;
+  }
+}
