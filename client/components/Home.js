@@ -168,7 +168,7 @@ const Home = () => {
           <div className="divider"></div>
           <div className="project-list">
             <div className="project-half">
-              <h1 className="heading">Tweeter</h1>
+              <h1 className="heading">Tweeted</h1>
               <p className="text">
                 A simple twitter clone. Sign up, follow users, like posts,
                 upload pictures, and search for posts / users. Responsive design
