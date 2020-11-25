@@ -237,13 +237,13 @@ a {
     font-weight: 600; }
 
 .tech-container {
-  display: flex; }
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem; }
 
 .tech-items {
   display: flex;
   flex-direction: column; }
-  .tech-items:not(:last-child) {
-    margin-right: 10rem; }
 
 .bold {
   font-weight: 700; }
