@@ -172,7 +172,7 @@ const Home = () => {
               <p className="text">
                 A simple twitter clone. Sign up, follow users, like posts,
                 upload pictures, and search for posts / users. Responsive design
-                for deskop and mobile.
+                for desktop and mobile.
               </p>
 
               <br />
