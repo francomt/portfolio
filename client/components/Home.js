@@ -107,7 +107,7 @@ const Home = () => {
             <p className="text">
               I come from a graphic design background and have had an
               appreciation for art and design my entire life. While in college,
-              I attend a web design class. This is where I realized my true
+              I attended a web design class. This is where I realized my true
               passion and dove into the world of software engineering and
               development.
             </p>
