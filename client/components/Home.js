@@ -106,20 +106,15 @@ const Home = () => {
             <br />
             <p className="text">
               I come from a graphic design background and have had an
-              appreciation for art and design my entire life. As a degree
-              requirement in college, I registered for a web design class. This
-              is where I realized my true passion and began researching software
-              engineering and development.
+              appreciation for art and design my entire life. While in college,
+              I attend a web design class. This is where I realized my true
+              passion and dove into the world of software engineering and
+              development.
             </p>
             <br />
             <p className="text">
-              I was self taught for about a year, and shortly after I attended‎‎
-              ‎
-              <a className="bold" href="https://www.fullstackacademy.com">
-                Fullstack Academy
-              </a>
-              . I'm incredibly passionate at problem solving and delivering the
-              best product I can make.
+              I love to build things. I'm especially passionate at problem
+              solving and delivering the best product I can make.
             </p>
             <br />
             <p className="text text-bold">
